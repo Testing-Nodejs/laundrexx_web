@@ -1,0 +1,19 @@
+{
+  "editor.wordWrap": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "author-generator.author": "KIMOSABE",
+  "author-generator.email": "Kimosabe@mail.com",
+  "author-generator.updateOnSave": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "editor.snippetSuggestions": "top",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "razor": "html",
+    "plaintext": "pug"
+  },
+  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
+}

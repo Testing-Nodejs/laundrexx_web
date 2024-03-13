@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+.container_Dashboard {
+  position: relative;
+  // width: 350px;
+  width: 100%;
+  padding: 40px;
+  height: 180px;
+  // min-height: 500px;
+  border-radius: 30px;
+  background-color: #2f363e;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+
+  h3 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2em;
+  }
+
+  .list {
+    position: relative;
+    display: flex;
+    // align-items: center;
+    // margin: 20px 0;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 45px;
+      height: 45px;
+      border-radius: 22.5px;
+      background: #ec3235;
+      box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+      transition: all 0.5s;
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
+
+    .rank {
+      position: relative;
+      min-width: 45px;
+      height: 45px;
+      // background:#fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      &::before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background-color: #2f363e;
+        border-radius: 30px;
+        transform: scale(0);
+        transition: 0.5s;
+      }
+
+      span {
+        position: relative;
+        font-weight: 600;
+        font-size: 1em;
+        color: #fff;
+        transition: all 0.5s;
+      }
+    }
+
+    &:hover .rank::before {
+      transform: scale(1);
+    }
+
+    .creator {
+      position: relative;
+      line-height: 1.15em;
+      padding-top: 6%;
+
+      h4 {
+        font-weight: 800;
+        color: #fff;
+        transition: 0.5s;
+        margin-top: 5%;
+      }
+
+      p {
+        font-weight: 400;
+        color: #95999d;
+        font-size: 0.85em;
+        transition: 0.5s;
+      }
+    }
+
+    &:hover .creator h4,
+    &:hover .creator p {
+      color: #fff;
+    }
+  }
+  .comde {
+    text-align: center;
+    color: #fff;
+    font-family: Franklin Gothic Medium;
+    font-size: 16px;
+    line-height: 1;
+  }
+  .DashboardBtn {
+    width: 100% !important;
+    padding: 0% !important;
+  }
+}

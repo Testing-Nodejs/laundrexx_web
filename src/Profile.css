@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+
+.c-body {
+  font-family: "Montserrat", sans-serif;
+  background: #ffffff;
+  /* fallback for old browsers */
+  /* background: linear-gradient(to right,
+      #111536,
+      #161a3f); */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background-image: url("https://cdn.osxdaily.com/wp-content/uploads/2020/10/macos-big-sur-wallpaper-2-scaled.jpg"); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  border-left: 1px solid #b9b9b9;
+  min-height: 450px !important;
+}
+
+#main {
+  display: grid;
+
+  grid-template-columns: 40% 60%;
+  max-width: 500px;
+  height: 310.5px;
+  background: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.4)
+  );
+  box-shadow: 0 8px 32px 19px rgb(42 52 193 / 37%);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  margin: auto;
+  margin-top: 40px;
+}
+#name {
+  color: rgba(255, 255, 255, 0.6);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 0 40px;
+}
+#profilepic {
+  height: 140px;
+  width: 140px;
+  box-shadow: 0 0 42px 0 rgba(255, 255, 255, 0.17);
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 3px solid rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 10%;
+}
+#photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.link {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0px 32px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: block;
+  font-size: 40px;
+  padding: 4px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.link:hover {
+  transform: translateY(-2px);
+  transition: all 0.5s;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#github:hover a {
+  background: -webkit-linear-gradient(rgb(124, 0, 124), #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#insta:hover a {
+  background: -webkit-linear-gradient(45deg, #f6ce6d, #dd2b68, #ae32a9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#dribbble:hover a {
+  background: -webkit-linear-gradient(45deg, #e45189, #e04b85);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#contacts {
+  display: flex;
+  flex-direction: row;
+}
